@@ -13,5 +13,5 @@ npm run serve
 npm run build
 ```
 ## Screenshots
-<image src="https://puu.sh/GxZGN/d875041fac.png"/>
+<image src="https://puu.sh/GxZSy/4db2532271.png"/>
 <image src="https://puu.sh/GxZHm/3e7b40e344.png"/>
