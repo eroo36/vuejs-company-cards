@@ -1,10 +1,11 @@
 # Vue Crash Course (TodoList)
 
-This is the code for [the crash course on YouTube](https://youtu.be/Wy9q22isx3U)
 
 ## Quick Start
 
 ```bash
+# Clone the project
+
 # Install dependencies
 npm install
 
@@ -14,3 +15,6 @@ npm run serve
 # Build for production
 npm run build
 ```
+## Screenshots
+<image src="https://puu.sh/GxZGN/d875041fac.png"/>
+<image src="https://puu.sh/GxZHm/3e7b40e344.png"/>
