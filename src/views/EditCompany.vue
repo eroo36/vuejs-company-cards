@@ -10,7 +10,6 @@
 						Company Name
 						<input
             class="input-group"
-						style=""
 							:placeholder="getCompanyObj[0].companyName"
 						>
 					</div>
@@ -38,7 +37,7 @@
 							type="number"
 						>
 					</div>
-					<div class="item2" style="">
+					<div class="item2">
 					<h3>Additional Notes</h3>
 					<textarea
 						@click="textAreaClick"

@@ -6,22 +6,24 @@
 		<div style="margin: 20px;">
 			<form id="add-company-form" @submit="submitEvent">
 				<div class="grid-container">
-					<div @change="setCompanyName" class="item1">
+					<div @change="setCompanyName" style="text-align: center;">
 						Company Name
-						<input type="text" style="width: 36%">
+						<input type="text" class="input-group">
 					</div>
-					<div v-on:change="minScope" class="item1">
+					<div v-on:change="minScope" style="text-align: center; margin-top: 15px;">
 						Company Min Spend
 						<input
-							style="width: 36%"
+            class="input-group"
+							style="width: 30%; margin-left: auto; margin-right: auto; margin-top: 15px;"
 							min="0"
 							:max="maxSpend"
 							type="number"
 						>
 					</div>
-					<div v-on:change="maxScope" class="item1">
+					<div v-on:change="maxScope" style="text-align: center; margin-top: 15px;">
 						Company Max Spend
-						<input style="width: 36%; height: 15%;"
+						<input style="width: 30%; margin-left: auto; margin-right: auto;"
+            class="input-group"
 							:min="minSpend"
               max="1000"
 							type="number"
@@ -161,24 +163,51 @@ export default {
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
+  display: column;
+  grid-template-columns: auto auto auto;
   padding: 10px;
 }
-
-.grid-container > div {
+.grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  text-align: end;
-  padding: 20px 0;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
   font-size: 30px;
+  text-align: center;
 }
 
-.item1 {
-  grid-column: 1 / span 2;
+.input-group {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: right;
+  align-items: right;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: start;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
 }
+
 .item2 {
-  grid-column: 1 / span 2;
-  text-align: center !important;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+.text-span {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15px;
+  text-align: center;
 }
 </style>

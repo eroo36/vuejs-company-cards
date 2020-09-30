@@ -41,13 +41,14 @@ export default {
   position: relative;
   width: 100%;
 }
+
 .company {
   background-color: #fff;
+  left: 30%;
   border-radius: 10px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   position: relative;
-  left: 25%;
   max-width: 50%;
   margin: 20px;
   overflow: hidden;
